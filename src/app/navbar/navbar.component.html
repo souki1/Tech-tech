@@ -1,0 +1,41 @@
+<nav class="navbar1">
+
+        <div class=" logo">
+
+          <a href="">  <img src="../../assets/logo.png"  class="nav-logo" alt="logo">
+            </a> 
+        </div>
+  
+        <div class="navbar" [class.menuClass]="check">
+        <div class="menu">
+        <ul>
+            <li>
+                <a href="#" class=""> Curriculum</a>
+            </li>
+            <li>
+                <a href="">Personal 30</a>
+            </li>
+            <li>
+                <a href="">Hire From Us</a>
+            </li>
+            <li>
+                <a href="">contact us</a>
+            </li>
+                <div class="button">
+
+                    <button type="button" class="btn btn-primary">Sign In </button>
+                </div>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-icon">
+
+            <i class="" [ngClass]="menu1"  aria-hidden="true"  (click)="toggleMenu()" ></i>  
+            <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
+            
+            
+        </div>
+     
+
+   
+</nav>

@@ -1,0 +1,120 @@
+.navbar1{
+    padding: 0 30px;
+    display: flex;
+    background-color: white;
+    /* box-shadow: 0.31px 0.31px black; */
+    height: 70px;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ul{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+ text-align: center;
+
+}
+
+.nav-logo{
+    width: 100px;
+    height: 70px;
+}
+li{
+    padding: 10px;
+    list-style: none;
+    text-underline-offset: none;
+}
+a{
+    text-underline-offset: none; 
+    color: black;
+    text-decoration: none;
+    font-weight: 450;
+}
+a:hover{
+    transition: .4s ease-in-out;
+    color: rgb(70, 70, 245);
+}
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+}
+.menu-icon{
+    display: none;
+}
+.nav-menu{
+    display: none;
+    color: black;
+}
+
+/* Responsive navbar  */
+@media only screen and (max-width:720px){
+.navbar{
+
+    display: grid;
+    position:fixed;
+    top: 0px;
+    right: 0;
+    width: 200px;
+    height: 350px;
+background-color: black;
+/* background-color: rgb(204, 192, 192); */
+
+}
+ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    padding: 15px;
+    display: flex;
+    color: white;  
+    justify-content: center;
+    align-items: center;  
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li a{
+    color: white;
+}
+.menu-icon{
+    display: flex;
+    justify-content: center;
+}
+.nav-menu{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    top:20px;
+    right:35px;
+    color:red;
+    transition: .4s ease-in-out;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuClass{
+    right: -200px;
+}
+.close{
+    top:20px;
+    right:35px;
+   display: flex;
+   position: absolute;
+    width: 20px;
+    height: 20px;
+    color: red;
+}
+}
